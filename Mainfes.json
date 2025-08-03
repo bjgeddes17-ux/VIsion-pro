@@ -1,0 +1,17 @@
+{
+  "name": "VisionAI Sports",
+  "short_name": "VisionAI",
+  "description": "Your AI coach for padel, soccer, rugby, and more.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#121212",
+  "theme_color": "#1a3765",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "48x48",
+      "type": "image/x-icon"
+    }
+  ]
+}
