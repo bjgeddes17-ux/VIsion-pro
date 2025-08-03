@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>VisionAI Sports | Your AI Coach</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  
+  <!-- MediaPipe Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/pose/pose.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Winning is easier when you have the advantage</h1>
+      <p>Unlock your potential with AI-powered coaching for padel, soccer, rugby, and more.</p>
+      <div class="cta-buttons">
+        <button id="get-started" class="btn-primary">🎯 Get Started Free</button>
+        <button id="watch-demo" class="btn-secondary">▶️ Watch Demo</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Classes Section -->
+  <section class="classes">
+    <h2>Our Classes</h2>
+    <div class="class-grid">
+      <div class="class-card">
+        <h3>Padel</h3>
+        <p>Master your backhand, drop shot, and smash.</p>
+        <button class="btn-upload">📤 Upload Video</button>
+      </div>
+      <div class="class-card">
+        <h3>Soccer</h3>
+        <p>Perfect your shooting, dribbling, and passing.</p>
+        <button class="btn-upload">📤 Upload Video</button>
+      </div>
+      <div class="class-card">
+        <h3>Rugby</h3>
+        <p>Improve your tackle form and scrum technique.</p>
+        <button class="btn-upload">📤 Upload Video</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Power Excello Section -->
+  <section class="power-excello">
+    <h2>Power Excello</h2>
+    <p>Take your game to the next level with advanced AI coaching.</p>
+    <button class="btn-signup">📝 Sign Up Here</button>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials">
+    <h2>What They're Saying</h2>
+    <div class="testimonial">
+      <p>"VisionAI cut my feedback time by 80%. My players improve faster."</p>
+      <strong>— Coach Thabo, Grey College Rugby</strong>
+    </div>
+  </section>
+
+  <!-- Contact Us -->
+  <section class="contact">
+    <h2>Contact Us</h2>
+    <p>Email: info@visionai.co.za</p>
+    <p>Phone: +27 12 345 6789</p>
+  </section>
+
+  <!-- Hidden Video & Canvas Elements -->
+  <input type="file" id="videoInput" accept="video/*" capture="environment" style="display: none;" />
+  <video id="videoPreview" style="display: none;"></video>
+  <canvas id="outputCanvas" style="display: none;"></canvas>
+
+  <!-- Feedback Screen (Hidden by Default) -->
+  <div id="feedbackScreen" class="feedback-screen" style="display: none;">
+    <h2>🎯 AI Feedback</h2>
+    <div class="comparison">
+      <div class="user-pose">
+        <h3>Your Form</h3>
+        <canvas id="userCanvas" width="200" height="300"></canvas>
+      </div>
+      <div class="vs">VS</div>
+      <div class="pro-pose">
+        <h3>Pro Form</h3>
+        <canvas id="proCanvas" width="200" height="300"></canvas>
+      </div>
+    </div>
+    <p id="feedbackText">Analyzing your game...</p>
+    <button id="playFeedback" class="btn-primary">🔊 Play Feedback</button>
+    <a href="index.html" class="btn-secondary">← Back</a>
+  </div>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
