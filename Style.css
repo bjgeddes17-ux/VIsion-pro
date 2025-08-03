@@ -1,0 +1,192 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: #121212;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(135deg, #1a3765, #d40511);
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn-primary, .btn-secondary {
+  padding: 14px 32px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.btn-primary {
+  background: #1a3765;
+  color: white;
+}
+
+.btn-secondary {
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+}
+
+/* Classes Section */
+.classes {
+  padding: 80px 20px;
+  text-align: center;
+  background: #1a1a1a;
+}
+
+.classes h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+.class-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.class-card {
+  background: #121212;
+  padding: 30px;
+  border-radius: 12px;
+  border: 1px solid #333;
+}
+
+.class-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #d40511;
+}
+
+.btn-upload {
+  background: #1a3765;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+/* Power Excello */
+.power-excello {
+  padding: 80px 20px;
+  text-align: center;
+  background: #121212;
+}
+
+.power-excello h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.btn-signup {
+  background: #d40511;
+  color: white;
+  border: none;
+  padding: 14px 32px;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+/* Testimonials */
+.testimonials {
+  padding: 80px 20px;
+  text-align: center;
+  background: #1a1a1a;
+}
+
+.testimonial {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+  border-left: 4px solid #1a3765;
+  background: #121212;
+}
+
+/* Contact */
+.contact {
+  padding: 60px 20px;
+  text-align: center;
+  background: #121212;
+}
+
+/* Feedback Screen */
+.feedback-screen {
+  padding: 40px 20px;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.comparison {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 30px 0;
+}
+
+.vs {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #d40511;
+}
+
+#feedbackText {
+  font-size: 1.2rem;
+  margin: 20px 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+  
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .comparison {
+    flex-direction: column;
+  }
+}
